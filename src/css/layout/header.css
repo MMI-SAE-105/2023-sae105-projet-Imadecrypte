@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 385px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background: #840080;
+}
+
+.header__comet{
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+.header__h1{
+    margin: 20px;
+    width: 223px;
+    height: 23px;
+    flex-shrink: 0; 
+
+    color: #FFF;
+    font-family: Playfair Display;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+.header__menu{
+    margin: 10px;
+    width: 28px;
+    height: 17.118px;
+    flex-shrink: 0; 
+    margin-top: 10px;
+}
+
+.header__icon{
+    width: 25px;
+    height: 25.174px;
+    flex-shrink: 0; 
+}
+
+button {
+    display: block;
+    margin-top: 100px;
+    margin-left: -192px;
+}

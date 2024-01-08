@@ -2,3 +2,8 @@
     font-family: 'Mincho';
     src: url('/src/fonts/Shippori_Mincho/ShipporiMincho-SemiBold.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('/src/fonts/Nunito/static/Nunito-SemiBold.ttf') format('truetype');
+}
