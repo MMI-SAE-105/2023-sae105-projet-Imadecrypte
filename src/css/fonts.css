@@ -7,3 +7,13 @@
     font-family: 'Nunito';
     src: url('/src/fonts/Nunito/static/Nunito-SemiBold.ttf') format('truetype');
 }
+
+@font-face {
+    font-family: 'Pacifico', cursive;
+    src: url('/src/fonts/Pacifico/Pacifico-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Playfair Display', serif;
+    src: url('/src/fonts/Playfair_Display/static/PlayfairDisplay-SemiBold.ttf') format('truetype');
+}
