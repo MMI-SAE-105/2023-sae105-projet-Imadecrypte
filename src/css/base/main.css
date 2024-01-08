@@ -1,0 +1,40 @@
+.accueil{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    border: 0;
+    background-image: url("/public/img/Accueil.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1{
+    font-family: 'Mincho', sans-serif;
+    color: white;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+}
+
+.rectangle{
+    width: 390px;
+    height: 30px;
+    flex-shrink: 0;
+    background: #840080;
+    position: absolute;
+    bottom: 0;
+}
+
+.rond{
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    position: absolute;
+    bottom: 0px;
+}
