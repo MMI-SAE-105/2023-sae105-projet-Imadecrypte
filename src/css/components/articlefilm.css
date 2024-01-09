@@ -2,3 +2,32 @@
     background-image: url('/public/img/background_purple.jpeg');
     background-size: cover;
 }
+
+.rectangle{
+    position: relative;
+    top: 10px;
+    margin-left: 7px;
+    width: 370px;
+    height: 2021px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: rgba(217, 217, 217, 0.80);
+    z-index: 1;
+}
+
+.film__title{
+    position: relative;
+    top: -2000px;
+    width: 149px;
+    height: 26px;
+    flex-shrink: 0; 
+    color: #000;
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    padding-top: 25px;
+    margin-left: 135px;
+    z-index: 2;
+}
