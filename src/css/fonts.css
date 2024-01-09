@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: 'Mincho regular';
+    src: url('/src/fonts/Shippori_Mincho/ShipporiMincho-Regular.ttf') format('truetype');
+}
+
+@font-face {
     font-family: 'Nunito';
     src: url('/src/fonts/Nunito/static/Nunito-SemiBold.ttf') format('truetype');
 }
