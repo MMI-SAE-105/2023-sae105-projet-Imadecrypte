@@ -94,3 +94,11 @@
     height: 176px;
     flex-shrink: 0;
 }
+
+.button{
+    margin: 30px;
+}
+
+.button1{
+    margin-right: 160px;
+}
