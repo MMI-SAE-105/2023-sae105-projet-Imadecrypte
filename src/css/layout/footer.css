@@ -40,3 +40,13 @@ footer{
     margin-left: 50px;
     margin-right: 50px;
 }
+
+.footer__legal{
+    color: #FFF;
+    font-family: Nunito;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    padding-bottom: 5px;
+}
