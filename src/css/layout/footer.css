@@ -1,0 +1,26 @@
+footer{
+    text-align: center;
+    align-items: center;
+    background: #0F056B;
+    color: white;
+}
+
+.lien{
+    color: #FFF;
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.lien__apropos{
+    padding-top: 10px;
+}
+
+.lien__glossaire{
+    padding-top: 10px;
+}
+
+.lien__contact{
+    padding-top: 10px;
+}
