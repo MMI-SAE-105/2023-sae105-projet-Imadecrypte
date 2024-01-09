@@ -1,4 +1,5 @@
 .film{
+    height: 210vh;
     background-image: url('/public/img/background_purple.jpeg');
     background-size: cover;
 }
