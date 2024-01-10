@@ -88,3 +88,8 @@ article{
     font-weight: 600;
     line-height: 110%;
 }
+
+audio{
+    margin: 10px;
+    width: 320px;
+}
