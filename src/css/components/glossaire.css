@@ -1,0 +1,17 @@
+.glossaire{
+    background-image: url('/public/img/background_purple.jpeg');
+    background-size: cover;
+    height: 100vh;
+}
+
+.glossaire__title{
+    margin-top: 25px;
+    padding-bottom: 20px;
+    color: #FFF;
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    text-align: center;
+}

@@ -22,12 +22,6 @@ input[type="submit"]:hover {
 }
 
 .contact{
-    color: #FFF;
-    font-family: Nunito;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 110%;
     background-image: url('/public/img/background_purple.jpeg');
     background-size: cover;
     height: 100vh;
@@ -46,4 +40,10 @@ input[type="submit"]:hover {
 
 .contact__txt{
     margin: 25px;
+    color: #FFF;
+    font-family: Nunito;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
 }
