@@ -1,5 +1,5 @@
 .musique{
-    height: 185vh;
+    height: 200vh;
     background-image: url('/public/img/background_purple.jpeg');
     background-size: cover;
 }
@@ -9,7 +9,7 @@
     top: 10px;
     margin-left: 7px;
     width: 370px;
-    height: 1530px;
+    height: 1630px;
     flex-shrink: 0;
     border-radius: 15px;
     background: rgba(217, 217, 217, 0.80);
@@ -18,7 +18,7 @@
 
 .film__title__musique{
     position: relative;
-    margin-top: -1480px;
+    margin-top: -1500px;
     width: 240px;
     height: 26px;
     flex-shrink: 0; 
