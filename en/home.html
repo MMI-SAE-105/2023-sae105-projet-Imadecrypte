@@ -8,27 +8,28 @@
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body x-data="{ atTop: true }">
-    <header class="header container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop }">
-        <img
-            class="header__comet"
-            src="/public/img/comet.png"
-            alt="Icone du site"
-        />
-        <h1 class="header__h1">Donne moi ton nom</h1>
+    <header class="header__container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop }">
+        <a href="/fr/index.html">
+            <img
+                class="header__comet"
+                src="/public/img/comet.png"
+                alt="Icone du site"
+            />
+        </a>
+        <h1 class="header__h1">Give me your name</h1>
 
         <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
             @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
             <span class="menu-btn__bar"></span>
         </button>
         
-        <a>
-            <img 
-                class="header__icon"
-                src="/public/img/france.png" 
-                alt="Icone FR"
-            />
-        </a>
-        <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+        <img 
+            class="header__icon"
+            src="/public/img/france.png" 
+            alt="Icone FR"
+        />
+
+        <nav class="menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
                 <ul class="menu__list list-unstyled">
                     <li class="menu__item"><a class="menu__link" href="/fr/accueil.html">Accueil - Articles</a></li>
                     <li class="menu__item"><a class="menu__link" href="/fr/articlefilm.html">Le film - Your Name (Kimi no Na wa)</a></li>
@@ -41,86 +42,86 @@
         </nav>
     </header>
     <main class="main">
-        <h1 class="main__title">Accueil</h1>
+        <h1 class="main__title">Home</h1>
         <p class="main__txt">Your Name (Kimi no Na wa)</p>
-        <p class="main__txt2">Un Chef-d'Œuvre de l'Animation Japonaise</p>
+        <p class="main__txt2">A Japanese Animation Masterpiece</p>
         <article>
             <img
                 class="main__img1"
                 src="/public/img/yourname_article1.jpeg" 
                 alt="Image article1"
             />
-            <p class="main__article1">"Your Name" (Kimi no Na wa) de Makoto 
-                Shinkai (2016) est un film d'animation japonais salué pour son 
-                récit captivant, son animation remarquable et ses thèmes universels. 
-                Il a laissé une empreinte mondiale durable en transcendant les 
-                frontières culturelles.</p>
+            <p class="main__article1">"Your Name (Kimi no Na wa) by Makoto 
+                Shinkai (2016) is a Japanese animated film acclaimed for its 
+                remarkable animation and universal themes. 
+                It has left a lasting global imprint by transcending 
+                cultural borders.</p>
         </article>
-        <p class="main__txt">La Signification Profonde de </p>
-        <p class="main__txt2">'Donne-moi ton nom' dans Your Name.</p>
+        <p class="main__txt">The Profound Significance of</p>
+        <p class="main__txt2">'Give me your name' in Your Name.</p>
         <article>
             <img
                 class="main__img2"
                 src="/public/img/yourname_article2.jpeg"
                 alt="Image article2"
             />
-            <p class="main__article2">"Your Name" (Kimi no Na wa), le film 
-                emblématique de Makoto Shinkai, est riche en émotions et en thèmes 
-                captivants. Au cœur de l'œuvre se trouve une réplique simple mais 
-                profondément significative : "Donne-moi ton nom." Cette phrase devient 
-                un élément clé de l'intrigue, révélant une profondeur émotionnelle 
-                et un symbolisme marquants pour le spectateur.</p>
+            <p class="main__article2">"Your Name (Kimi no Na wa), Makoto Shinkai's 
+                by Makoto Shinkai, is rich in emotion and captivating themes. 
+                captivating themes. At the heart of the film is a simple but deeply meaningful line: "Give me your name. 
+                deeply meaningful line: "Give me your name." This phrase becomes 
+                a key element of the plot, revealing an emotional depth and symbolism 
+                and symbolism for the viewer.</p>
         </article>
-        <p class="main__txt">La Mélodie Étincelante de 'Sparkle'</p>
-        <p class="main__txt2">dans la Bande Originale de Your Name</p>
+        <p class="main__txt">The Sparkling Melody of 'Sparkle'</p>
+        <p class="main__txt2">in the Your Name soundtrack</p>
         <article>
             <img
                 class="main__img1"
                 src="/public/img/yourname_article3.jpeg"
                 alt="Image article3"
             />
-            <p class="main__article1">"Your Name" (Kimi no Na wa), le célèbre 
-                film d'animation de Makoto Shinkai, offre une expérience sensorielle 
-                complète, notamment grâce à sa magnifique bande originale. Parmi 
-                ses joyaux musicaux, "Sparkle" se distingue comme une mélodie 
-                emblématique, ajoutant une profondeur émotionnelle remarquable 
-                au film.</p>
+            <p class="main__article1">"Your Name" (Kimi no Na wa), Makoto Shinkai's celebrated 
+                animated film by Makoto Shinkai, offers a complete sensory experience 
+                experience, not least thanks to its magnificent soundtrack. Among 
+                its musical gems, "Sparkle" stands out as an iconic melody, adding an 
+                melody, adding remarkable emotional depth to the film. 
+                to the film.</p>
         </article>
-        <p class="main__txt">À la Découverte du Japon à Travers </p>
-        <p class="main__txt2">'Your Name' et l' 'Atlas du Japon'</p>
+        <p class="main__txt">Discovering Japan through</p>
+        <p class="main__txt2">Your Name' and 'Atlas of Japan</p>
         <article>
             <img
                 class="main__img2"
                 src="/public/img/yourname_article4.jpeg"
                 alt="Image article4"
             />
-            <p class="main__article2">"Your Name" (Kimi no Na wa) a captivé 
-                le public mondial avec son animation japonaise, offrant un aperçu 
-                du paysage et de la culture du Japon. L'ouvrage "Atlas du Japon" 
-                complète cette compréhension, créant un voyage émotionnel et culturel. 
-                Cet article explore comment ces deux œuvres se complètent.</p>
+            <p class="main__article2">"Your Name" (Kimi no Na wa) has captivated 
+                global audience with its Japanese animation, offering a glimpse 
+                the landscape and culture of Japan. The Atlas of Japan 
+                complements this understanding, creating an emotional and cultural journey. 
+                This article explores how these two works complement each other.</p>
         </article>
-        <p class="main__txt">Makoto Shinkai : Le Magicien derrière 'Your Name'</p>
-        <p class="main__txt2">et l'Animation Japonaise Moderne</p>
+        <p class="main__txt">Makoto Shinkai: The magician behind 'Your Name</p>
+        <p class="main__txt2">and Modern Japanese Animation</p>
         <article>
             <img
                 class="main__img1"
                 src="/public/img/yourname_article5.jpeg"
                 alt="Image article5"
             />
-            <p class="main__article1">"Your Name" (Kimi no Na wa), le célèbre 
-                film d'animation de Makoto Shinkai, offre une expérience sensorielle 
-                complète, notamment grâce à sa magnifique bande originale. Parmi 
-                ses joyaux musicaux, "Sparkle" se distingue comme une mélodie 
-                emblématique, ajoutant une profondeur émotionnelle remarquable 
-                au film.</p>
+            <p class="main__article1">"Your Name" (Kimi no Na wa), Makoto Shinkai's celebrated 
+                animated film by Makoto Shinkai, offers a complete sensory experience 
+                experience, not least thanks to its magnificent soundtrack. Among 
+                its musical gems, "Sparkle" stands out as an iconic melody, adding an 
+                melody, adding remarkable emotional depth to the film. 
+                to the film..</p>
         </article>
     </main>
     <footer>
         <div class="footer__lien">
-            <p class="lien__apropos">A propos</p>
-            <p class="lien__glossaire">Glossaire</p>
-            <p class="lien__contact">Contact</p>
+            <a class="footer__a" href="/fr/apropos.html"><p class="lien__apropos">About us</p></a>
+            <a class="footer__a" href="/fr/glossaire.html"><p class="lien__glossaire">Glossary</p></a>
+            <a class="footer__a" href="/fr/contact.html"><p class="lien__contact">Contact</p></a>
         </div>
         <div class="footer__img">
             <img
@@ -139,7 +140,7 @@
                 alt="Discord icon"
             />
         </div>
-        <p class="footer__legal">Ce projet à été réalisé dans le cadre du BUT MMI Montbéliard.</p>
+        <p class="footer__legal">This project was carried out as part of the BUT MMI Montbéliard course.</p>
     </footer>
 </body>
 </html>
