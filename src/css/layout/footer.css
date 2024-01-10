@@ -50,3 +50,8 @@ footer{
     line-height: 110%;
     padding-bottom: 5px;
 }
+
+.footer__a{
+    text-decoration: none;
+    color: inherit;
+}
