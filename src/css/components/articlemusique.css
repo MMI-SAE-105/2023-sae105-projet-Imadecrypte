@@ -16,10 +16,19 @@
     z-index: 1;
 }
 
-.film__img5{
-    margin: 20px;
-    margin-left: 50px;
-    width: 241px;
-    height: 340px;
+.film__title__musique{
+    position: relative;
+    margin-top: -1480px;
+    width: 240px;
+    height: 26px;
     flex-shrink: 0; 
+    color: #000;
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    padding-top: 25px;
+    margin-left: 160px;
+    z-index: 2;
 }
