@@ -47,3 +47,7 @@ input[type="submit"]:hover {
     font-weight: 600;
     line-height: 110%;
 }
+
+.contact__espace{
+    margin-top: 47px;
+}
