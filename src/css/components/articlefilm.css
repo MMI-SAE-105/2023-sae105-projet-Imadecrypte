@@ -51,6 +51,23 @@
     z-index: 2;
 }
 
+.film__title__replique{
+    position: relative;
+    margin-top: -1650px;
+    width: 240px;
+    height: 26px;
+    flex-shrink: 0; 
+    color: #000;
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    padding-top: 25px;
+    margin-left: 80px;
+    z-index: 2;
+}
+
 .film__txt{
     position: relative;
     margin-bottom: -1950px;
