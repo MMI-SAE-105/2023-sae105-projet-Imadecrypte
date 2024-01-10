@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen:false}" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Replica Article</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body x-data="{ atTop: true }">
+    <header class="header__container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop }">
+        <a href="/fr/index.html">
+            <img
+                class="header__comet"
+                src="/public/img/comet.png"
+                alt="Icone du site"
+            />
+        </a>
+        <h1 class="header__h1">Give me your name.</h1>
+
+        <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+        </button>
+        
+        <img 
+            class="header__icon"
+            src="/public/img/france.png" 
+            alt="Icone FR"
+        />
+
+        <nav class="menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="/fr/accueil.html">Accueil - Articles</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/fr/articlefilm.html">Le film - Your Name (Kimi no Na wa)</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/fr/articlereplique.html">Donne-moi ton nom</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/fr/articlemusique.html">Une mélodie étincelante : Sparkle</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/fr/apropos.html">A propos</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/fr/contact.html">Contact</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/fr/glossaire.html">Glossaire</a></li>
+                </ul>
+        </nav>
+    </header>
+    <main class="replique">
+        <div class="rectangle_replique"></div>
+        <h2 class="film__title__replique">Give me your name</h2>
+
+        <div class="film__txt">
+        <p class="film__txt__title">The Emotional Context</p>
+        <p>The line "Give me your name" is uttered in a moment of 
+            by one of the main characters, Taki Tachibana. 
+            characters, Taki Tachibana. As Taki realises that 
+            his memory of the exchange of bodies with Mitsuha 
+            is fading, he is overcome by panic and loss. He 
+            the urge to remember the person he loves, but he 
+            the person he loves, but he forgets why. So he writes 
+            he writes "I love you" on his hand to try to remember Mitsuha. </p>
+
+        <p class="film__txt__title">The Key to Réunion</p>
+        <p>The line "Give me your name" has a key meaning in the plot.
+            significance in the plot. It becomes the symbol of the 
+            connection between Taki and Mitsuha, a connection that 
+            transcends the barriers of time and space. 
+            For their destinies to converge, they must remember each other's 
+            remember each other's names. This simple 
+            action symbolises the perseverance of their love, even 
+            in the face of oblivion and separation.</p>
+        <img
+            class="film__img5"
+            src="/public/img/your_name_visuel5.png"
+            alt="Visuel5"
+        />
+        
+        <p class="film__txt__title">Love Across Time</p>
+        <p>"Your Name" explores the complex theme of time and 
+            destiny. The characters are faced with major obstacles 
+            obstacles, but the line "Give me your name" represents 
+            represents the idea that love can transcend these 
+            obstacles. Names are a fundamental part of our identity 
+            our identity, and remembering them is the way to remember 
+            who we are and who we love. This line 
+            becomes a powerful reminder that love can withstand 
+            the test of time and memory loss.</p>
+        
+        <p class="film__txt__title">A symbol of union and love</p>
+        <p>In the end, "Give me your name" became an emblematic 
+            iconic line in the film. It symbolises 
+            the perseverance of love, memory, and the deep 
+            connection between the characters. It reminds the audience 
+            that, despite the challenges and barriers we face 
+            before us, love can be a powerful force in bringing 
+            bring souls together. It's a reminder that sometimes all it takes 
+            change the course of our lives.</p>
+        <img
+            class="film__img4"
+            src="/public/img/your_name_visuel6.png"
+            alt="Visuel6"
+        />
+        
+        <p class="film__txt__title">Conclusion</p>
+        <p>In "Your Name," this line transcends words 
+            to become a key element of the film's emotion and 
+            symbolism of the film. It remains a symbol of 
+            of love and unity that continues to touch the hearts 
+            to audiences around the world.</p>
+        
+        <div class="button_replique">
+            <img
+                class="button1"
+                src="/public/img/Boutton precedant.svg"
+                alt="Bouton précédant"
+            />
+            <img
+                class="button2"
+                src="/public/img/Boutton suivant.svg"
+                alt="Bouton suivant"
+            />
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer__lien">
+            <a class="footer__a" href="/fr/apropos.html"><p class="lien__apropos">About us</p></a>
+            <a class="footer__a" href="/fr/glossaire.html"><p class="lien__glossaire">Glossary</p></a>
+            <a class="footer__a" href="/fr/contact.html"><p class="lien__contact">Contact</p></a>
+        </div>
+        <div class="footer__img">
+            <img
+                class="img__x"
+                src="/public/img/x.png"
+                alt="X icon"
+            />
+            <img
+                class="img__insta"
+                src="/public/img/insta.png"
+                alt="Instagram icon"
+            />
+            <img
+                class="img__discord"
+                src="/public/img/discord.png"
+                alt="Discord icon"
+            />
+        </div>
+        <p class="footer__legal">This project was carried out as part of the BUT MMI Montbéliard course.</p>
+    </footer>
+</body>
+</html>
