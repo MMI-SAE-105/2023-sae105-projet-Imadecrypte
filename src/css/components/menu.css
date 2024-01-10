@@ -1,0 +1,40 @@
+.menu{
+    background-image: url('/public/img/background_purple.jpeg');
+    background-size: cover;
+    height: 100vh;
+}
+
+.menu__header__h1{
+    margin: 20px;
+    width: 223px;
+    height: 23px;
+    flex-shrink: 0; 
+
+    color: #FFF;
+    font-family: Playfair Display;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    text-align: center;
+}
+
+li{
+    color: #FFF;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    margin-top: 67px;
+    margin-bottom: 67px;
+}
+
+.barre{
+    width: 280px;
+    height: 5px;
+    border-radius: 5px;
+    background: #000;
+    margin-left: 45px;
+}
