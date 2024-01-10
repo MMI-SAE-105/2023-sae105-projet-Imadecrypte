@@ -49,3 +49,9 @@ header{
     margin-left: -205px;
     margin-bottom: 10px;
 }
+
+.header__container{
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+}

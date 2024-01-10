@@ -1,5 +1,5 @@
 .main{
-    height: 200vh;
+    height: 220vh;
     background: linear-gradient(to bottom, #0F056B, #920083);
 }
 
@@ -15,6 +15,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: 110%;
+    padding-top: 150px;
 }
 
 .main__txt{

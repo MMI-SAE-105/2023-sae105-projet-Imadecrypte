@@ -8,7 +8,7 @@
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body x-data="{ atTop: true }">
-    <header class="header container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop }">
+    <header class="header__container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop }">
         <a href="/fr/index.html">
             <img
                 class="header__comet"
