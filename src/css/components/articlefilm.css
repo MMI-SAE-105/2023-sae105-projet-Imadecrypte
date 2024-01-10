@@ -1,5 +1,5 @@
 .film{
-    height: 200vh;
+    height: 230vh;
     background-image: url('/public/img/background_purple.jpeg');
     background-size: cover;
 }
@@ -10,7 +10,7 @@
     top: 10px;
     margin-left: 7px;
     width: 370px;
-    height: 1660px;
+    height: 1900px;
     flex-shrink: 0;
     border-radius: 15px;
     background: rgba(217, 217, 217, 0.80);
@@ -19,7 +19,7 @@
 
 .film__title{
     position: relative;
-    margin-top: -1650px;
+    margin-top: -1750px;
     width: 240px;
     height: 26px;
     flex-shrink: 0; 
@@ -29,7 +29,6 @@
     font-style: normal;
     font-weight: 600;
     line-height: 110%;
-    padding-top: 25px;
     margin-left: 135px;
     z-index: 2;
 }
