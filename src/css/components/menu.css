@@ -79,7 +79,7 @@ li{
   color: white;
   text-decoration: none;
   line-height: 1;
-  font-family: Playfair Display;
+  font-family: Nunito;
   font-size: 24px;
 }
 
@@ -147,4 +147,16 @@ li{
   font-size: 22px;
   margin-right: -140px;
   margin-top: 7%;
+}
+
+li{
+    color: #FFF;
+    text-align: center;
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    margin-top: 67px;
+    margin-bottom: 67px;
 }
