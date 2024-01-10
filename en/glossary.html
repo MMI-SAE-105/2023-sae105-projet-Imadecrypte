@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen:false}" :class="menuIsOpen && 'noscroll'">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glossary</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body class="glossaire" x-data="{ atTop: true }">
+    <header class="header__container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop }">
+        <a href="/fr/index.html">
+            <img
+                class="header__comet"
+                src="/public/img/comet.png"
+                alt="Icone du site"
+            />
+        </a>
+        <h1 class="header__h1">Give me your name</h1>
+
+        <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+        </button>
+        
+        <img 
+            class="header__icon"
+            src="/public/img/france.png" 
+            alt="Icone FR"
+        />
+
+        <nav class="menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="/fr/accueil.html">Accueil - Articles</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/fr/articlefilm.html">Le film - Your Name (Kimi no Na wa)</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/fr/articlereplique.html">Donne-moi ton nom</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/fr/articlemusique.html">Une mélodie étincelante : Sparkle</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/fr/apropos.html">A propos</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/fr/contact.html">Contact</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/fr/glossaire.html">Glossaire</a></li>
+                </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="glossaire__title">Glossary</h2>
+        <p class="glossaire__txt">• Mitsuha Miyamizu: Mitsuha is one of the main characters in the film, a teenager living in a rural village. 
+            in the film, a teenage girl living in a rural village. 
+            Her name becomes central to the plot.</p>
+
+        <p class="glossaire__txt">• Taki Tachibana: Taki is the other protagonist, a young man living in Tokyo. 
+            living in Tokyo. His name is also important 
+            in the story.</p>
+
+        <p class="glossaire__txt">• Body-swapping: This term refers 
+            phenomenon in which the main characters mysteriously 
+            mysteriously swap bodies, becoming Mitsuha in Taki's body 
+            Mitsuha in Taki's body and vice versa.</p>
+
+        <p class="glossaire__txt">• Comet Tiamat: Comet Tiamat is the trigger
+             of the film's plot, influencing the events of a
+             significantly.</p>
+
+        <p class="glossaire__txt">• Itomori: The rural village where Mitsuha lives, which is the setting
+             many scenes from the film.</p>
+        <div class="glossaire__espace"></div>
+    </main>
+    <footer>
+        <div class="footer__lien">
+            <a class="footer__a" href="/fr/apropos.html"><p class="lien__apropos">About us</p></a>
+            <a class="footer__a" href="/fr/glossaire.html"><p class="lien__glossaire">Glossary</p></a>
+            <a class="footer__a" href="/fr/contact.html"><p class="lien__contact">Contact</p></a>
+        </div>
+        <div class="footer__img">
+            <img
+                class="img__x"
+                src="/public/img/x.png"
+                alt="X icon"
+            />
+            <img
+                class="img__insta"
+                src="/public/img/insta.png"
+                alt="Instagram icon"
+            />
+            <img
+                class="img__discord"
+                src="/public/img/discord.png"
+                alt="Discord icon"
+            />
+        </div>
+        <p class="footer__legal">This project was carried out as part of the BUT MMI Montbéliard course.</p>
+    </footer>
+</body>
+</html>
