@@ -4,18 +4,6 @@
     background-size: cover;
 }
 
-.replique{
-    height: 205vh;
-    background-image: url('/public/img/background_purple.jpeg');
-    background-size: cover;
-}
-
-.musique{
-    height: 185vh;
-    background-image: url('/public/img/background_purple.jpeg');
-    background-size: cover;
-}
-
 
 .rectangle{
     position: relative;
@@ -23,30 +11,6 @@
     margin-left: 7px;
     width: 370px;
     height: 1660px;
-    flex-shrink: 0;
-    border-radius: 15px;
-    background: rgba(217, 217, 217, 0.80);
-    z-index: 1;
-}
-
-.rectangle_replique{
-    position: relative;
-    top: 10px;
-    margin-left: 7px;
-    width: 370px;
-    height: 1700px;
-    flex-shrink: 0;
-    border-radius: 15px;
-    background: rgba(217, 217, 217, 0.80);
-    z-index: 1;
-}
-
-.rectangle_musique{
-    position: relative;
-    top: 10px;
-    margin-left: 7px;
-    width: 370px;
-    height: 1530px;
     flex-shrink: 0;
     border-radius: 15px;
     background: rgba(217, 217, 217, 0.80);
@@ -67,40 +31,6 @@
     line-height: 110%;
     padding-top: 25px;
     margin-left: 135px;
-    z-index: 2;
-}
-
-.film__title__replique{
-    position: relative;
-    margin-top: -1650px;
-    width: 240px;
-    height: 26px;
-    flex-shrink: 0; 
-    color: #000;
-    font-family: Nunito;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 110%;
-    padding-top: 25px;
-    margin-left: 80px;
-    z-index: 2;
-}
-
-.film__title__musique{
-    position: relative;
-    margin-top: -1480px;
-    width: 240px;
-    height: 26px;
-    flex-shrink: 0; 
-    color: #000;
-    font-family: Nunito;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 110%;
-    padding-top: 25px;
-    margin-left: 160px;
     z-index: 2;
 }
 
@@ -164,14 +94,6 @@
     width: 313px;
     height: 176px;
     flex-shrink: 0;
-}
-
-.film__img5{
-    margin: 20px;
-    margin-left: 50px;
-    width: 241px;
-    height: 340px;
-    flex-shrink: 0; 
 }
 
 .button{

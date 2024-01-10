@@ -1,0 +1,25 @@
+.musique{
+    height: 185vh;
+    background-image: url('/public/img/background_purple.jpeg');
+    background-size: cover;
+}
+
+.rectangle_musique{
+    position: relative;
+    top: 10px;
+    margin-left: 7px;
+    width: 370px;
+    height: 1530px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: rgba(217, 217, 217, 0.80);
+    z-index: 1;
+}
+
+.film__img5{
+    margin: 20px;
+    margin-left: 50px;
+    width: 241px;
+    height: 340px;
+    flex-shrink: 0; 
+}
