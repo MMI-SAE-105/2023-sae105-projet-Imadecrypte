@@ -1,4 +1,4 @@
-.accueil{
+.accueil1{
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -22,7 +22,7 @@ h1{
     line-height: 110%;
 }
 
-.rectangle{
+.rectangle1{
     width: 390px;
     height: 30px;
     flex-shrink: 0;
