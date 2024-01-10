@@ -15,3 +15,13 @@
     line-height: 110%;
     text-align: center;
 }
+
+.glossaire__txt{
+    margin: 25px;
+    color: #FFF;
+    font-family: Nunito;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+}
