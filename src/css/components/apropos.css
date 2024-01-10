@@ -1,0 +1,26 @@
+.apropos{
+    background-image: url('/public/img/background_purple.jpeg');
+    background-size: cover;
+    height: 100vh;
+}
+
+.apropos__title{
+    margin-top: 25px;
+    color: #FFF;
+    font-family: Nunito;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+    text-align: center;
+}
+
+.apropos__txt{
+    margin: 25px;
+    color: #FFF;
+    font-family: Nunito;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%;
+}
