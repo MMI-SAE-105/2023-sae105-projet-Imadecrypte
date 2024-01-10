@@ -9,11 +9,13 @@
 </head>
 <body x-data="{ atTop: true }">
     <header class="header container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop }">
-        <img
-            class="header__comet"
-            src="/public/img/comet.png"
-            alt="Icone du site"
-        />
+        <a href="/fr/index.html">
+            <img
+                class="header__comet"
+                src="/public/img/comet.png"
+                alt="Icone du site"
+            />
+        </a>
         <h1 class="header__h1">Donne moi ton nom</h1>
 
         <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
@@ -26,7 +28,7 @@
             src="/public/img/france.png" 
             alt="Icone FR"
         />
-        
+
         <nav class="menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
                 <ul class="menu__list list-unstyled">
                     <li class="menu__item"><a class="menu__link" href="/fr/accueil.html">Accueil - Articles</a></li>
