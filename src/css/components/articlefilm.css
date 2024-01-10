@@ -19,7 +19,7 @@
 .film__title{
     position: relative;
     margin-top: -1650px;
-    width: 149px;
+    width: 240px;
     height: 26px;
     flex-shrink: 0; 
     color: #000;
@@ -93,6 +93,14 @@
     width: 313px;
     height: 176px;
     flex-shrink: 0;
+}
+
+.film__img5{
+    margin: 20px;
+    margin-left: 50px;
+    width: 241px;
+    height: 340px;
+    flex-shrink: 0; 
 }
 
 .button{
