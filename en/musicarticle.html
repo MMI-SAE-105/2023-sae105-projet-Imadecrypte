@@ -1,60 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr" x-data="{menuIsOpen:false}" :class="menuIsOpen && 'noscroll'">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Article Musique</title>
+    <title>Music Article</title>
     <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
-<body>
-    <header>
-        <img
-            class="header__comet"
-            src="/public/img/comet.png"
-            alt="Icone du site"
-        />
-        <h1 class="header__h1">Donne moi ton nom</h1>
-        <img
-            class="header__menu"
-            src="/public/img/Menu.png"
-            alt="Icone du menu"
-        />
-        <a>
-            <img 
-                class="header__icon"
-                src="/public/img/france.png" 
-                alt="Icone FR"
+<body x-data="{ atTop: true }">
+    <header class="header__container" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ 'header--atTop' : !atTop }">
+        <a href="/fr/index.html">
+            <img
+                class="header__comet"
+                src="/public/img/comet.png"
+                alt="Icone du site"
             />
         </a>
+        <h1 class="header__h1">Give me your name.</h1>
+
+        <button class="menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+            <span class="menu-btn__bar"></span>
+        </button>
+        
+        <img 
+            class="header__icon"
+            src="/public/img/france.png" 
+            alt="Icone FR"
+        />
+
+        <nav class="menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="/fr/accueil.html">Accueil - Articles</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/fr/articlefilm.html">Le film - Your Name (Kimi no Na wa)</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/fr/articlereplique.html">Donne-moi ton nom</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/fr/articlemusique.html">Une mélodie étincelante : Sparkle</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/fr/apropos.html">A propos</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/fr/contact.html">Contact</a></li>
+                    <li class="menu__item"><a class="menu__link" href="/fr/glossaire.html">Glossaire</a></li>
+                </ul>
+        </nav>
     </header>
     <main class="musique">
         <div class="rectangle_musique"></div>
         <h2 class="film__title__musique">Sparkle</h2>
 
         <div class="film__txt">
-        <p class="film__txt__title">Création Magistrale par Radwimps</p>
-        <p>"Sparkle" est une chanson interprétée par le groupe 
-            japonais Radwimps, qui a écrit et composé l'intégralité 
-            de la bande originale du film. La chanson se distingue 
-            par sa mélodie douce et envoûtante, ainsi que par des 
-            paroles poétiques qui s'harmonisent parfaitement 
-            avec les thèmes du film.</p>
+        <p class="film__txt__title">Magistral creation by Radwimps</p>
+        <p>"Sparkle" is a song performed by the Japanese group 
+            band Radwimps, who wrote and composed the entire 
+            the film's entire soundtrack. The song is characterised 
+            by its soft, haunting melody and poetic lyrics, which 
+            poetic lyrics that fit in perfectly with the 
+            with the film's themes.</p>
         <img
             class="film__img4"
             src="/public/img/your_name_visuel7.png"
             alt="Visuel1"
         />
 
-        <p class="film__txt__title"> Émotion et Signification</p>
-        <p>La chanson "Sparkle" est associée à un moment clé de 
-            l'intrigue du film, lorsque les deux personnages 
-            principaux, Taki et Mitsuha, se rendent compte de 
-            l'importance de se souvenir l'un de l'autre malgré les 
-            barrières du temps et de l'espace. Les paroles reflètent 
-            le désir ardent de préserver leur lien, même si la 
-            mémoire de leurs rencontres s'efface lentement.<br><br>
+        <p class="film__txt__title"> Emotion and meaning</p>
+        <p>The song "Sparkle" is associated with a key moment in the 
+            when the two main characters, Taki and Mitsuha 
+            characters, Taki and Mitsuha, realise the importance of remembering 
+            importance of remembering each other despite the barriers of 
+            barriers of time and space. The lyrics reflect 
+            desire to preserve their bond, even if the memory of their 
+            even as the memory of their encounters slowly fades.<br><br>
 
-            Voici un extrait des paroles de "Sparkle" :<br><br>
+            Here is an extract from the lyrics of "Sparkle" :<br><br>
 
             "I am always searching for you<br>
             Hidden in the cherry blossoms<br>
@@ -62,20 +76,20 @@
 
         <audio controls src="/public/video/スパークル [original ver.] -Your name. Music Video edition- 予告編 from new album「人間開花」初回盤DVD(1).mp3"></audio>
 
-        <p>Ces paroles expriment une quête intemporelle de 
-            l'autre, un thème central de "Your Name." La chanson 
-            transmet un sentiment d'espoir, d'amour et de 
-            persévérance, renforçant ainsi l'émotion de la scène 
-            à laquelle elle est associée.</p>
+        <p>These lyrics express a timeless quest for the 
+            the other, a central theme of "Your Name." The song 
+            conveys a sense of hope, love and perseverance, thus 
+            perseverance, thus reinforcing the emotion of the scene 
+            with which it is associated.</p>
         
-        <p class="film__txt__title"> Impact sur le Public</p>
-        <p>"Sparkle" est devenue l'une des chansons 
-            emblématiques du film et a ému un vaste public. Les 
-            fans du monde entier ont été touchés par la beauté de 
-            la musique et la manière dont elle renforce l'impact 
-            émotionnel du film. La chanson a également connu un 
-            grand succès commercial, atteignant un large auditoire 
-            au-delà du film lui-même.</p>
+        <p class="film__txt__title"> Impact on the public</p>
+        <p>"Sparkle" became one of the film's iconic 
+            iconic songs of the film and moved a wide audience. Fans 
+            fans around the world were moved by the beauty of the 
+            beauty of the music and the way it reinforces the emotional 
+            emotional impact of the film. The song has also been 
+            commercial success, reaching a wide audience beyond the 
+            beyond the film itself.</p>
         <img
             class="film__img4"
             src="/public/img/your_name_visuel8.png"
@@ -83,15 +97,15 @@
         />
 
         <p class="film__txt__title">Conclusion</p>
-        <p>La chanson "Sparkle" est un exemple parfait de la 
-            manière dont la musique peut amplifier l'émotion dans 
-            un film. Son mélange de mélodie envoûtante et de 
-            paroles poignantes la rend inoubliable, et elle demeure 
-            un rappel puissant des thèmes centraux de "Your Name" 
-            tels que l'amour, la mémoire et le destin. Elle continue 
-            à captiver et à émouvoir les auditeurs, tout comme le 
-            film continue de toucher les cœurs des cinéphiles du 
-            monde entier.</p>
+        <p>The song 'Sparkle' is a perfect example of how 
+            how music can amplify emotion in a film. 
+            a film. Its blend of haunting melody and poignant 
+            lyrics makes it unforgettable, and it remains a powerful 
+            a powerful reminder of "Your Name's" central themes of love 
+            such as love, memory and destiny. It continues to 
+            to captivate and move listeners, just as the film continues to 
+            continues to touch the hearts of filmgoers the world over. 
+            the world.</p>
         
         <div class="button_musique">
             <img
@@ -109,9 +123,9 @@
     </main>
     <footer>
         <div class="footer__lien">
-            <p class="lien__apropos">A propos</p>
-            <p class="lien__glossaire">Glossaire</p>
-            <p class="lien__contact">Contact</p>
+            <a class="footer__a" href="/fr/apropos.html"><p class="lien__apropos">About us</p></a>
+            <a class="footer__a" href="/fr/glossaire.html"><p class="lien__glossaire">Glossary</p></a>
+            <a class="footer__a" href="/fr/contact.html"><p class="lien__contact">Contact</p></a>
         </div>
         <div class="footer__img">
             <img
@@ -130,7 +144,7 @@
                 alt="Discord icon"
             />
         </div>
-        <p class="footer__legal">Ce projet à été réalisé dans le cadre du BUT MMI Montbéliard.</p>
+        <p class="footer__legal">This project was carried out as part of the BUT MMI Montbéliard course.</p>
     </footer>
 </body>
 </html>
